@@ -3,6 +3,7 @@
 	"author": "Elliott-Green (@cryptonines)",
 	"description": "An example NodeJS backend server which hosts a websocket for real time chat",
 	"private": false,
+	"main": "./dist/src/index.js",
 	"license": "UNLICENSED",
 	"version": "0.0.1",
 	"type": "module",
@@ -16,5 +17,8 @@
 		"dotenv": "^17.2.4",
 		"socket.io": "^4.7.5"
 	},
-	"packageManager": "pnpm@10.24.0"
+	"packageManager": "pnpm@10.24.0",
+	"devDependencies": {
+		"@types/node": "^25.2.1"
+	}
 }

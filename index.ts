@@ -1,14 +1,13 @@
 import 'dotenv/config';
 import { createServer } from 'http';
 import { Server, Socket } from 'socket.io';
-import { SOCKET_ENDPOINT } from './config/urlConfig.ts';
 
 // Websocket Server Setup
 const httpServer = createServer();
 
 const io = new Server(httpServer, {
 	cors: {
-		origin: ['http://localhost:5173', `${process.env.LOCAL_IP}:5173`],
+		origin: ['http://localhost:5173', `${process.env.LOCAL_IP}:5173`, 'https://evm-realtimechat-server.onrender.com'],
 		credentials: true
 	}
 });
@@ -163,4 +162,4 @@ function leaveChat(socket: Socket, chatId: string) {
 	}
 }
 
-httpServer.listen(3001, '0.0.0.0');
+httpServer.listen(3002, '0.0.0.0');

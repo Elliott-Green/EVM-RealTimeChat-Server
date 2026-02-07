@@ -166,6 +166,6 @@ function leaveChat(socket: Socket, chatId: string) {
 	}
 }
 
-httpServer.listen(3002, '0.0.0.0', () => {
+httpServer.listen(10000, '0.0.0.0', () => {
 	console.log(`evm-realtimechat-server started`);
 });

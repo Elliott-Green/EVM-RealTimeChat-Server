@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: EVM-RealTimeChat-Server
+    name: evm-realtimechat-server
     runtime: node
     plan: free
     buildCommand: pnpm i

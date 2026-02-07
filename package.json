@@ -1,5 +1,5 @@
 {
-	"name": "sk-realtimechat-server",
+	"name": "evm-realtimechat-server",
 	"author": "Elliott-Green (@cryptonines)",
 	"description": "An example NodeJS backend server which hosts a websocket for real time chat",
 	"private": false,
@@ -8,7 +8,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
-		"dev": "ts-node index.ts",
+		"dev": "npx ts-node index.ts",
 		"format": "prettier --write ."
 	},
 	"dependencies": {

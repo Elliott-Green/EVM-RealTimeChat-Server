@@ -5,6 +5,3 @@ services:
     plan: free
     buildCommand: pnpm i && pnpm build
     startCommand: pnpm run start
-    envVars:
-      - key: VITE_DEV_STATUS
-        value: 3
